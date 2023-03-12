@@ -13,4 +13,7 @@ export class RestService {
   get(url:string){
     return this.http.get<gatos>(url)
   }
+  post(url:string, body:any){
+    return this.http.post(url, body)
+  }
 }

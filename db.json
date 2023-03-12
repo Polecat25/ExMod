@@ -1,45 +1,265 @@
 {
-    "gatos": [
-        {
-            "id": 1,
-          "title": "Gato numero 1",
-          "subtitle": "sere tu guia mi pana",
-          "image" : "https://stickerly.pstatic.net/sticker_pack/13279e882d3a25af/PPB4TK/6/05f72e42-4ee3-4098-980d-f37706076b42.png",
-          "autor":{
-            "nombre": "yo pues",
-            "año": 2023
-          }
-        },
-        {
-            "id": 2,
-          "title": "Gato numero 2",
-          "subtitle": "no le se bro buscate otro",
-          "image": "https://assets.epuzzle.info/puzzle/098/820/original.jpg",
-          "autor":{
-            "nombre": "yo pues",
-            "año": 2023
-          }
-        },
-        {
-            "id": 3,
-          "title": "Gato numero 3",
-          "subtitle": "no le se bro buscate otro x2",
-          "image": "https://www.publimetro.cl/resizer/lzO_MRk1FEgGre3k2R27-iWNexM=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/PLVZCQTWNNBAREUW3PVDC575JQ.png" ,
-          "autor":{
-            "nombre": "yo pues",
-            "año": 2023
-          }
-        },
-        {
-            "id": 4,
-          "title": "Gato numero 4",
-          "subtitle": "no le se bro buscate otro x3",
-          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAsgdkmFUVk96OM5XXM1FBF7s4Gy-Crl4CfGbTqWfZaoKoq9Yd3wjuDAySOsKdy4HG1w&usqp=CAU" ,
-          "autor":{
-            "nombre": "yo pues",
-            "año": 2023
-          }
-        }
-      ]
-  
-  }
+  "gatos": [
+    {
+      "id": 1,
+      "title": "Gato numero 1",
+      "subtitle": "sere tu guia mi pana",
+      "image": "https://stickerly.pstatic.net/sticker_pack/13279e882d3a25af/PPB4TK/6/05f72e42-4ee3-4098-980d-f37706076b42.png",
+      "autor": {
+        "nombre": "yo pues",
+        "año": 2023
+      }
+    },
+    {
+      "id": 2,
+      "title": "Gato numero 2",
+      "subtitle": "no le se bro buscate otro",
+      "image": "https://assets.epuzzle.info/puzzle/098/820/original.jpg",
+      "autor": {
+        "nombre": "yo pues",
+        "año": 2023
+      }
+    },
+    {
+      "id": 3,
+      "title": "Gato numero 3",
+      "subtitle": "no le se bro buscate otro x2",
+      "image": "https://www.publimetro.cl/resizer/lzO_MRk1FEgGre3k2R27-iWNexM=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/PLVZCQTWNNBAREUW3PVDC575JQ.png",
+      "autor": {
+        "nombre": "yo pues",
+        "año": 2023
+      }
+    },
+    {
+      "id": 4,
+      "title": "Gato numero 4",
+      "subtitle": "no le se bro buscate otro x3",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAsgdkmFUVk96OM5XXM1FBF7s4Gy-Crl4CfGbTqWfZaoKoq9Yd3wjuDAySOsKdy4HG1w&usqp=CAU",
+      "autor": {
+        "nombre": "yo pues",
+        "año": 2023
+      }
+    },
+    {
+      "id": 5,
+      "title": "Gato numero 5",
+      "subtitle": "no le se bro buscate otro x4",
+      "image": "https://imagenes.20minutos.es/files/image_990_v3/uploads/imagenes/2020/10/26/el-gato-que-baila-al-ritmo-de-la-musica.png",
+      "autor": {
+        "nombre": "yo pues",
+        "año": 2023
+      }
+    }
+  ],
+  "comentarios": [
+    {
+      "id": 1,
+      "id_from": "1",
+      "contenido": "uwuw",
+      "fecha": "15a56"
+    },
+    {
+      "id": 2,
+      "id_from": "1",
+      "contenido": "qweq",
+      "fecha": "sasd"
+    },
+    {
+      "text": "esribe algo no se que",
+      "id": 3
+    },
+    {
+      "text": {
+        "id_from": 0,
+        "comentario": "esribe algo x2"
+      },
+      "id": 4
+    },
+    {
+      "id_from": "1",
+      "contenido": "esto es un comentario final",
+      "fecha": "function now() { [native code] }",
+      "id": 5
+    },
+    {
+      "id_from": "1",
+      "contenido": "holaaaaaaaaaaaaa",
+      "fecha": "2023-03-12 07:33 AM",
+      "id": 6
+    },
+    {
+      "id_from": "1",
+      "contenido": "me cago",
+      "fecha": "2023-03-12 01:49 AM",
+      "id": 7
+    },
+    {
+      "id_from": "2",
+      "contenido": "LOL SE MUERIO ",
+      "fecha": "2023-03-12 01:50 AM",
+      "id": 8
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:57 AM",
+      "id": 9
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:57 AM",
+      "id": 10
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:57 AM",
+      "id": 11
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:57 AM",
+      "id": 12
+    },
+    {
+      "id_from": "1",
+      "contenido": "",
+      "fecha": "2023-03-12 01:57 AM",
+      "id": 13
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 14
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 15
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 16
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 17
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 18
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 19
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 20
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 21
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 22
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 23
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 24
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 25
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algo",
+      "fecha": "2023-03-12 01:58 AM",
+      "id": 26
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe pedazo de mierda",
+      "fecha": "2023-03-12 02:42 AM",
+      "id": 27
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe\nAS algo",
+      "fecha": "2023-03-12 03:16 AM",
+      "id": 28
+    },
+    {
+      "id_from": "1",
+      "contenido": "esribe algoQWEQOW BQWUEOQUIWTEQTWO QW EQYUWTE P QWEOQ WTEQOWUTEQ WET QT  TQWETOTQWE OTWOEQWE",
+      "fecha": "2023-03-12 03:17 AM",
+      "id": 29
+    },
+    {
+      "id_from": "1",
+      "contenido": "Hola queria fecitarte por tu trabajo de mierda, pero hoy dia no me gustan estas cosa gracias",
+      "fecha": "2023-03-12 03:43 AM",
+      "id": 30
+    },
+    {
+      "id_from": "1",
+      "contenido": "as",
+      "fecha": "2023-03-12 03:55 AM",
+      "id": 31
+    },
+    {
+      "id_from": "2",
+      "contenido": "ay que bonit",
+      "fecha": "2023-03-12 04:01 AM",
+      "id": 32
+    },
+    {
+      "id_from": "2",
+      "contenido": "nose",
+      "fecha": "2023-03-12 04:04 AM",
+      "id": 33
+    },
+    {
+      "id_from": "2",
+      "contenido": "holi",
+      "fecha": "2023-03-12 04:05 AM",
+      "id": 34
+    },
+    {
+      "id_from": "5",
+      "contenido": "elmaster",
+      "fecha": "2023-03-12 04:06 AM",
+      "id": 35
+    }
+  ]
+}

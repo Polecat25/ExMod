@@ -1,0 +1,6 @@
+.tableS {
+    height: 550px ;
+
+    overflow-y: scroll ;
+    display: block;
+  }

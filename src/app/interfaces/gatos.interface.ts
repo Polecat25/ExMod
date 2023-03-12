@@ -3,7 +3,7 @@ export interface gatos {
     title: String,
     subtitle: String,
     image: String,
-    autor:autor
+    autor:autor,    
 }
 
 export interface autor{

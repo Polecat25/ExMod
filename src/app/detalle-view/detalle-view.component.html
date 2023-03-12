@@ -1,3 +1,83 @@
-<p>detalle-view works!</p>
+<div class="container text-center">
+    <div class="row">
+      <div class="col-sm-8">
+        <div class="card px-5 py-5 sticky-sm-top" >
+            <img src="{{respuesta.image}}" class="img-fluid" alt="...">
+            <div class="card-body">
+              <h5 class="card-title g-sono">{{respuesta.title}}</h5>
+              <p class="card-text g-sono">{{respuesta.subtitle}}</p>
+              <a href="#" [routerLink]="['/']" class="btn btn-secondary g-sono">Go Back bro</a>
+            </div>
+          </div>
+      
+      </div>
+      <div class="col-sm-4 mb-3 sticky-top">        
+             
+              <!--  <div class="row">
+                <div class="col-2">
+                  <img width="40" height="40" src="https://media.tenor.com/Ci5ASMXoKh4AAAAC/dansci-kedi.gif" class="rounded-circle" alt="...">                                 
+                 </div>
+                 <div class="col-10">
+                  <label for="exampleFormControlInput1" class="form-label g-sono">COMENTARIO / COMMENT</label>                                
+                 </div>
+               </div>
 
-data: {{respuesta | json}} 
+               <div class="row " *ngFor="let comentario of comentarios_">
+                <div class="col-2">
+                  <img width="40" height="40" src="https://media.tenor.com/Ci5ASMXoKh4AAAAC/dansci-kedi.gif" class="rounded-circle" alt="...">                                 
+                 </div>
+                 <div class="col-10 align-self-baseline" style="text-align:start ;">
+                  <label for="exampleFormControlInput1" class="form-label g-sono pt-1">{{comentario.contenido}}</label>                        
+                 </div>
+               </div> -->
+                
+                 <table class="table mt-3 " >
+                    <thead class="table-light ">
+                      <tr>
+                        <th scope="col " width="50px">
+                            <img width="40" height="40" src="https://media.tenor.com/Ci5ASMXoKh4AAAAC/dansci-kedi.gif" class="rounded-circle" alt="...">
+                        </th>
+                        <th scope="col" class="sticky-sm-top">
+                            <label for="exampleFormControlInput1" class="form-label g-sono">COMENTARIO / COMMENT</label>                        
+                        </th>                       
+                      </tr>
+                    </thead>
+                    <tbody class="table-group-divider " >
+                      <tr *ngFor="let comentario of comentarios_">
+                        <th scope="row">
+                            <img width="40" height="40" src="https://media.tenor.com/Ci5ASMXoKh4AAAAC/dansci-kedi.gif" class="rounded-circle" alt="...">
+                        </th>
+                        <td style="width: 200px;">
+                            <label for="exampleFormControlInput1" class="form-label g-sono pt-1">{{comentario.contenido}}</label>
+                            <div class="card-footer text-muted g-sono fs-6">
+                              {{comentario.fecha}}
+                            </div>
+                        </td>
+                                                
+                      </tr>                  
+                     
+                    </tbody>
+                  </table> 
+             
+              
+              <form [formGroup]="form" (submit)="enviardata()">
+              <div class="mb-3 ">
+                <label for="exampleFormControlTextarea1" class="form-label g-sono alert alert-info">Leaving a comment</label>
+                
+                <textarea formControlName="comentario" name="comentario" id="comentario" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              </div>
+              <div class="d-grid gap-2">
+                <button [disabled]="form.invalid"  class="btn btn-success" type="button g-sono">Send / Enviar</button>
+              
+              </div>
+            </form>
+       
+      </div>
+    </div>
+    <!-- <div class="row">
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+      <div class="col-sm">col-sm</div>
+    </div> -->
+  </div>
+<!-- data: {{respuesta | json}}  -->
