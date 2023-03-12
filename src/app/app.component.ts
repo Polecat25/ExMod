@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { gatos } from './interfaces/gatos.interface';
+import { Component, OnInit } from '@angular/core';
+import { RestService } from './services/rest.service/rest.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ex-mod';
+  
 }

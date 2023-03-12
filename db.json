@@ -1,0 +1,45 @@
+{
+    "gatos": [
+        {
+            "id": 1,
+          "title": "Gato numero 1",
+          "subtitle": "sere tu guia mi pana",
+          "image" : "https://stickerly.pstatic.net/sticker_pack/13279e882d3a25af/PPB4TK/6/05f72e42-4ee3-4098-980d-f37706076b42.png",
+          "autor":{
+            "nombre": "yo pues",
+            "año": 2023
+          }
+        },
+        {
+            "id": 2,
+          "title": "Gato numero 2",
+          "subtitle": "no le se bro buscate otro",
+          "image": "https://assets.epuzzle.info/puzzle/098/820/original.jpg",
+          "autor":{
+            "nombre": "yo pues",
+            "año": 2023
+          }
+        },
+        {
+            "id": 3,
+          "title": "Gato numero 3",
+          "subtitle": "no le se bro buscate otro x2",
+          "image": "https://www.publimetro.cl/resizer/lzO_MRk1FEgGre3k2R27-iWNexM=/800x0/filters:format(png):quality(70)/cloudfront-us-east-1.images.arcpublishing.com/metroworldnews/PLVZCQTWNNBAREUW3PVDC575JQ.png" ,
+          "autor":{
+            "nombre": "yo pues",
+            "año": 2023
+          }
+        },
+        {
+            "id": 4,
+          "title": "Gato numero 4",
+          "subtitle": "no le se bro buscate otro x3",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFAsgdkmFUVk96OM5XXM1FBF7s4Gy-Crl4CfGbTqWfZaoKoq9Yd3wjuDAySOsKdy4HG1w&usqp=CAU" ,
+          "autor":{
+            "nombre": "yo pues",
+            "año": 2023
+          }
+        }
+      ]
+  
+  }

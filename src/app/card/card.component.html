@@ -1,0 +1,9 @@
+<div class="card">
+    <img [routerLink]="['/','post', DataEntrante.id]" class="image" [src]="DataEntrante.image" alt="">
+    <div class="wrpper-text">
+        <div class="title g-sono">{{DataEntrante.title}}</div>
+        <div class="subtitle g-sono">{{DataEntrante.subtitle}}</div>
+    </div>
+    <button role="button" (click)="agregarData()"class="button-58">Add</button>
+
+</div>

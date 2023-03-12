@@ -1,0 +1,13 @@
+<div>
+    <h3 class="g-sono">Favoritos</h3>
+</div>
+<div>
+    <ul *ngFor="let favs of ListaFavs">
+        <li>
+            <div>
+                <img [src]="favs.image" class="image" alt="">
+            </div>
+            <div class="g-sono">Titulo: {{favs.title}}</div>
+        </li>
+    </ul>
+</div>
