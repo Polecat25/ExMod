@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { enviroment } from '../config/enviroment';
 import { RestService } from '../services/rest.service/rest.service';
 
 @Component({
@@ -7,6 +8,8 @@ import { RestService } from '../services/rest.service/rest.service';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+
+  public direccionDV =  enviroment.production==false? enviroment.urldev : enviroment.urlbase 
   constructor(private rest: RestService){}
   public cards :any=[]
     ngOnInit(): void {    
@@ -15,7 +18,7 @@ export class HomeComponent implements OnInit {
     }
   
     public cargardata(){
-      this.rest.get("http://localhost:3000/gatos").subscribe(data=>{      
+      this.rest.get(this.direccionDV+"/gatos").subscribe(data=>{      
       this.cards = data
       //console.log("data de server json: ", this.cards);
     })

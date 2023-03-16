@@ -1,11 +1,13 @@
 import { RestService } from './../services/rest.service/rest.service';
 import { gatos } from './../interfaces/gatos.interface';
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute } from '@angular/router';
 import { FormGroup, FormBuilder, Validators } from '@angular/forms';
 
-import * as moment from 'moment';
+
 import { comentario } from '../interfaces/comentario.interface';
+import { enviroment } from '../config/enviroment';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-detalle-view',
@@ -14,10 +16,10 @@ import { comentario } from '../interfaces/comentario.interface';
 })
 export class DetalleViewComponent implements OnInit {
 
-
+  public direccionDV =  enviroment.production==false? enviroment.urldev : enviroment.urlbase 
 constructor (private router: ActivatedRoute, private servicio: RestService, private fb:FormBuilder){}
 
-hoy =  moment(Date.now()).format("YYYY-MM-DD hh:mm A")
+//hoy =  moment(Date.now()).format("YYYY-MM-DD hh:mm A")
 public respuesta:gatos = {
   id: 0,
   title: '',
@@ -26,6 +28,10 @@ public respuesta:gatos = {
   autor: {nombre:'', año:0}
 
 }
+
+pipe = new DatePipe('en-US');
+hoy = this.pipe.transform(Date.now(), 'dd-MM-YYYY hh:mm a') || "";
+
 public comentarios_:comentario | any
 public form!:FormGroup;
 
@@ -44,13 +50,13 @@ this.form= this.fb.group({
 }
 
 cargarData(id:string){
-  this.servicio.get("http://localhost:3000/gatos/"+id).subscribe((data:gatos)=>{
+  this.servicio.get(this.direccionDV+"/gatos/"+id).subscribe((data:gatos)=>{
       this.respuesta = data
       console.log("data: ", this.respuesta);
       
   });
   
-  this.servicio.get('http://localhost:3000/comentarios?id_from='+id).subscribe((comentarios:any)=>{
+  this.servicio.get(this.direccionDV+'/comentarios?id_from='+id).subscribe((comentarios:any)=>{
   this.comentarios_=comentarios
   })
 }
@@ -60,9 +66,9 @@ enviardata(){
   const body:comentario = {
       id_from: this.respuesta.id.toString(),
       contenido: this.form.value.comentario,
-      fecha: this.hoy
+      fecha: this.hoy?.toString()
   }
-  this.servicio.post('http://localhost:3000/comentarios', body).subscribe(res=>{
+  this.servicio.post(this.direccionDV+'/comentarios', body).subscribe(res=>{
     //console.log("enviado");
     //this.cargarData(this.respuesta.id.toString())
     this.form.reset();
