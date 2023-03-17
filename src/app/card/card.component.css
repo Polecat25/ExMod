@@ -2,11 +2,18 @@
     height: 15rem;
 }
 .boton {
-    background-color: blueviolet;
-height: 2rem;
-
+  color: antiquewhite;
+  background-color:#b018d6;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px; 
+  
 }
-
+.botonRadious{
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 50px; 
+}
 
 
 /* CSS */

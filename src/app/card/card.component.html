@@ -1,4 +1,4 @@
-<div class="card">
+<!-- <div class="card">
     <img [routerLink]="['/','post', DataEntrante.id]" class="image" [src]="DataEntrante.image" alt="">
     <div class="wrpper-text">
         <div class="title g-sono">{{DataEntrante.title}}</div>
@@ -6,4 +6,30 @@
     </div>
     <button role="button" (click)="agregarData()"class="button-58">Add</button>
 
-</div>
+</div> -->
+
+<div class="col">
+    <div class="card shadow-lg">
+      <!-- <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg> -->
+      <img [routerLink]="['/','post', DataEntrante.id]" width="100%" height="300" class=" bd-placeholder-img card-img-top" preserveAspectRatio="xMidYMid slice" [src]="DataEntrante.image" alt="">
+      
+      <div class="card-body">
+        <h5 class="card-title g-sono"><b>{{DataEntrante.title}}</b></h5>
+        <p class="card-text g-sono">{{DataEntrante.subtitle}}</p>
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="row">
+           <div class="container-fluid">
+            <button type="button"  [routerLink]="['/','post', DataEntrante.id]" class="m-1 btn btn-sm btn-info botonRadious"><span class="bi bi-chat"></span> Comment</button>
+            <button type="button"  class="m-1  btn btn-sm boton"><span class="bi bi-hand-thumbs-up"></span> 9999</button>
+            <button type="button"  (click)="agregarData()" class="m-1 btn btn-sm  boton"><span class="bi bi-heart"></span> Favorite</button>
+           
+           </div> 
+          </div>
+          
+        </div> 
+        <div class="text-center">
+            <!-- <small class="text-muted text-center">9 mins</small> -->
+        </div>
+      </div>
+    </div>
+  </div>

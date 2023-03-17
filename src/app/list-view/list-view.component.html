@@ -1,1 +1,38 @@
 <app-header></app-header>
+<div class="album py-5 bg-light">
+  <div class="container">
+    <div class="p-4">
+      <table class="table table-responsive-sm table-hover table-bordered border-secondary" >
+        <thead class="table-dark">
+          <tr>
+            <th scope="col">Image</th>
+            <th scope="col">Title</th>
+            <th scope="col">Count Comment</th>
+            <th scope="col">Likes</th>
+          </tr>
+        </thead>
+        <tbody class="table-group-divider">
+          <tr *ngFor="let comentario of c_C">
+            <th scope="row">
+              <img class="imagen" [src]="comentario.image" alt="">
+            </th>
+            <th scope="row" >
+              <a [routerLink]="['/','post', comentario.id_comentario]"><span class="badge text-bg-info" ><i class="bi bi-eye-fill"></i> {{comentario.title}}</span></a>              
+            </th>
+            <th scope="row">{{comentario.cc}} <span class="bi bi-hand-thumbs-up"></span></th>
+            <th scope="row"><a [routerLink]="['/','post', comentario.id_comentario]">{{comentario.cc}} <span class="bi bi-chat"></span></a></th>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</div>
+
+
+<!-- 
+ <div *ngFor="let comentario of datacomments">
+  <h1>--------------------------</h1>
+  {{comentario | json}}
+  {{datacomments.length}}
+</div>  -->

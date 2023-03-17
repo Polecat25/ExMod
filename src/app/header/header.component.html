@@ -1,4 +1,4 @@
-<div class="header" >
+<!-- <div class="header" >
     <ul class="menu">
      <li>
         <img class="logo" src="https://img2.freepng.es/20180429/rjq/kisspng-cat-logo-brand-art-5ae62dea6dae58.5479482515250344744493.jpg" alt="">
@@ -7,4 +7,49 @@
      <li>Opcion 2</li>
      <li>Opcion 3</li>
     </ul>
-</div>
+</div> -->
+
+<nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light" aria-label="Offcanvas navbar large">
+    <div class="container-fluid">
+        <img class="logo" src="http://clipart-library.com/images/zTX5nM7ec.png" alt="">
+        <h1 class="">Hola mi señor </h1>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-light" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbar2Label">Offcanvas</h5>
+          <button type="button" class="btn-close btn-close btn-close-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" [routerLink]="['/','listcom']"><span class="bi bi-chat-dots-fill"></span> Most Commented</a>
+            </li>
+            <li >
+                <a class="nav-link active" aria-current="page" [routerLink]="['/']"> <span  class="bi bi-house"></span> Main/Home</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                
+              <a class="nav-link dropdown-toggle"   role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-plus"></i> Options 
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item"  >Action</a></li>
+                <li><a class="dropdown-item" >Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item"  >Something else here</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- <form class="d-flex mt-3 mt-lg-0" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form> -->
+        </div>
+      </div>
+    </div>
+  </nav>

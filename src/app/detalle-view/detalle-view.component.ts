@@ -21,7 +21,7 @@ constructor (private router: ActivatedRoute, private servicio: RestService, priv
 
 //hoy =  moment(Date.now()).format("YYYY-MM-DD hh:mm A")
 public respuesta:gatos = {
-  id: 0,
+  id: '',
   title: '',
   subtitle: '',
   image: '',
@@ -63,8 +63,8 @@ cargarData(id:string){
 
 enviardata(){
 
-  const body:comentario = {
-      id_from: this.respuesta.id.toString(),
+  const body = {
+      id_from: this.respuesta.id,
       contenido: this.form.value.comentario,
       fecha: this.hoy?.toString()
   }
