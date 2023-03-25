@@ -11,6 +11,8 @@ import { DetalleViewComponent } from './detalle-view/detalle-view.component';
 import { HomeComponent } from './home/home.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { ListViewComponent } from './list-view/list-view.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ListViewComponent } from './list-view/list-view.component';
     HeaderComponent,
     DetalleViewComponent,
     HomeComponent,
-    ListViewComponent
+    ListViewComponent,
+    LoginComponent,
+    RegisterComponent
   ],
   imports: [
         

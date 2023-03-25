@@ -7,5 +7,6 @@ import { gatos } from '../interfaces/gatos.interface';
 //los servicios se imnportan en el construnctor donde se necesiten
 export class ServicioMultiService {
 @Output() disparadorFavoritos: EventEmitter<gatos> = new EventEmitter() 
+@Output() dataUser: EventEmitter<any> = new EventEmitter() 
   constructor() { }
 }

@@ -50,13 +50,13 @@ this.form= this.fb.group({
 }
 
 cargarData(id:string){
-  this.servicio.get(this.direccionDV+"/gatos/"+id).subscribe((data:gatos)=>{
+  this.servicio.get("/gatos/"+id).subscribe((data:gatos)=>{
       this.respuesta = data
       console.log("data: ", this.respuesta);
       
   });
   
-  this.servicio.get(this.direccionDV+'/comentarios?id_from='+id).subscribe((comentarios:any)=>{
+  this.servicio.get('/comentarios?id_from='+id).subscribe((comentarios:any)=>{
   this.comentarios_=comentarios
   })
 }
@@ -68,7 +68,7 @@ enviardata(){
       contenido: this.form.value.comentario,
       fecha: this.hoy?.toString()
   }
-  this.servicio.post(this.direccionDV+'/comentarios', body).subscribe(res=>{
+  this.servicio.post('/comentarios', body).subscribe(res=>{
     //console.log("enviado");
     //this.cargarData(this.respuesta.id.toString())
     this.form.reset();

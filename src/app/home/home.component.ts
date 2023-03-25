@@ -9,7 +9,7 @@ import { RestService } from '../services/rest.service/rest.service';
 })
 export class HomeComponent implements OnInit {
 
-  public direccionDV =  enviroment.production==false? enviroment.urldev : enviroment.urlbase 
+
   constructor(private rest: RestService){}
   public cards :any=[]
     ngOnInit(): void {    
@@ -18,7 +18,7 @@ export class HomeComponent implements OnInit {
     }
   
     public cargardata(){
-      this.rest.get(this.direccionDV+"/gatos").subscribe(data=>{      
+      this.rest.get("/gatos").subscribe(data=>{      
       this.cards = data
       //console.log("data de server json: ", this.cards);
     })

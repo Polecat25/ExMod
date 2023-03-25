@@ -25,11 +25,11 @@ export class ListViewComponent {
     this.cargaDataQuest();
   }
   cargarData() {
-    this.servicio.get(this.direccionDV + '/gatos').subscribe(data => {
+    this.servicio.get('/gatos').subscribe(data => {
       this.datagatos = data
       let greaterTen = [];
       for (let i = 0; i < this.datagatos.length; i++) {
-        this.servicio.get(this.direccionDV + '/comentarios?id_from=' + this.datagatos[i].id).subscribe(comments => {
+        this.servicio.get(    '/comentarios?id_from=' + this.datagatos[i].id).subscribe(comments => {
           this.datacomments = comments
           this.c_C.push({
             id_comentario: this.datagatos[i].id,
@@ -45,10 +45,10 @@ export class ListViewComponent {
   }
 
   cargaDataQuest(){
-    this.servicio.get(this.direccionDV + '/gatos').subscribe(data => {
+    this.servicio.get( '/gatos').subscribe(data => {
       this.datagatos = data //se obtienen el id normal
       //el id_from del comentario
-      this.servicio.get(this.direccionDV + '/comentarios').subscribe(comments => {
+      this.servicio.get( '/comentarios').subscribe(comments => {
         this.datacomments=comments
           for (let i = 0; i < this.datagatos.length; i++) {
             let cc = this.datacomments.filter((comentario: any)=> comentario.id_from === this.datagatos[i].id)
